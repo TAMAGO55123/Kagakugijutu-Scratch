@@ -9,4 +9,4 @@ var jslibdata1='';
 liblink.forEach(function (item, index){
     jslibdata1=jslibdata1+'<script src="'+item+'"></script>';
 });
-jsdiv.innerHTML=jslibdata1
+jsdiv.innerHTML=jslibdata1;
