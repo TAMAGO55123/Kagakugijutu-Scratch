@@ -29,7 +29,7 @@
         document.querySelector('button#sub').addEventListener('click',()=>{
             document.cookie=`kannri=1; max-age=${document.getElementById('time').value*60}`;
         });
-        document.querySelector('input#time').addEventListener('change',()=>{
+        document.querySelector('input#time').addEventListener('input',()=>{
             document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分';
         })
     </script>
