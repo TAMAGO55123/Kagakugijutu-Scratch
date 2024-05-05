@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理者設定</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-32x32.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#2594b4">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        label#num{
+            border: 1px black solid;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <button id="sub">管理用Cookie時間追加</button>
+    <input type="range" id="time" name="time" min="1" value="10">
+    <label for="time">時間（分）</label>
+    <label for="time" id="num"></label>
+    
+    <script>
+        document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分'
+        document.querySelector('button#sub').addEventListener('click',()=>{
+            document.cookie=`kannri=1; max-age=${document.getElementById('time').value*60}`;
+        });
+        document.querySelector('input#time').addEventListener('input',()=>{
+            document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分';
+        })
+    </script>
+</body>
+</html>
