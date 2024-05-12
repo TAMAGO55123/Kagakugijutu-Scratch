@@ -20,21 +20,34 @@
         <script src="lib/js/console.js"></script>
         <!--Style-->
         <link rel="stylesheet" href="index.css">
+        <script src="/get.js"></script>
     </head>
     <body>
-        <div data-role="page" id="page01">
+        <div data-role="page" id="page01" data-theme="a">
             <div data-role="header">
                 <a href="javascript:window.location.reload();" data-role="button" data-inline="true" data-icon="refresh">リロード</a>
                 <h1>科学技術部　作品発表ページ</h1>
                 <a href="#menu" data-icon="bars" data-inline="true" data-role="button" role="button">　</a>
             </div>
             <div role="main" class="ui-content">
-                <div class="ui-grid-a">
-                    <div class="ui-block-a one"><a href="" class="ui-btn">1年生</a></div>
-                    <div class="ui-block-b two"><a href="" class="ui-btn">2年生</a></div>
+                <div data-role="tabs" id="tabs">
+                    <div data-role="navber">
+                        <ul>
+                            <li class="tabli"><a href="#one" role="button" data-role="button">1年生</a></li>
+                            <li class="tabli"><a href="#two" role="button" data-role="button">2年生</a></li>
+                        </ul>
+                    </div>
+                    <div id="one" class="ui-body-a ui-content">
+                        
+                    </div>
+                    <div id="two" class="ui-body-a ui-content">
+                        two
+
+                    </div>
                 </div>
             </div>
             <div id="menu" data-role="panel" data-display="overlay" data-theme="a" class="panel" data-position="right">
+
                 <a href="#page01" data-role="button" data-icon="delete" data-rel="close" data-inline="true">閉じる</a>
             </div>
         </div>
@@ -46,6 +59,7 @@
             <script src="lib/js/back.js"></script>
             <script src="lib/js/br.js"></script>
             <script src="check.js"></script>
+            
         </div>
     </body>
 </html>

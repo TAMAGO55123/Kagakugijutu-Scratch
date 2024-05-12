@@ -4,12 +4,30 @@ h1{
     font-style: normal;
     font-size: 30px;
 }
-.one a{
+a[href="#one"]{
+    font-family: "Rampart One", sans-serif;
+    
+
+}
+a[href="#two"]{
     font-family: "Rampart One", sans-serif;
 }
-.two a{
-    font-family: "Rampart One", sans-serif;
-}
-.one a,.two a{
+a[href="#one"],a[href="#two"]{
     font-size: 30px;
+    float: left;
+    width: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+li.tabli{
+    list-style: none;
+}
+/*div[role="main"]{
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+}*/
+#one,#two{
+    background-color: #f9f9f9;
 }
