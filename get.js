@@ -7,9 +7,11 @@ function getScID(grade){
         async:false
     })
     .done(function (json){
-        console.log(json);
+        consoleif.log(json);
+        return json
     })
     .fail(function (){
-        console.error('エラーが発生しました');
+        consoleif.error('エラーが発生しました');
+        return null;
     })
 }
