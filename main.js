@@ -50,6 +50,7 @@ window.addEventListener('load', ()=>{
         onehtml[index][2].classList.add(index.toString());
         onehtml[index][3]=document.createElement('img');
         onehtml[index][3].src=value[2];
+        onehtml[index][3].alt=value[1];
         document.querySelector(`a.${num[index]}`).appendChild(onehtml[index][3]);
     });
     
