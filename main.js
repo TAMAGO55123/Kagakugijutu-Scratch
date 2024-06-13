@@ -6,10 +6,10 @@ var twohtml=[];
 
 
 window.addEventListener('load', ()=>{
-    //var one = getScID(1);
-    var one={grade:'1',ID:[[366353052]],Name:[['スイカゲーム　チート版！']],length:1};
-    //var two = getScID(2);
-    var two={grade:'2',ID:[[366353052]],Name:[['スイカゲーム　チート版！']],length:1};
+    var one = getScID(1);
+    //var one={grade:'1',ID:[[366353052]],Name:[['スイカゲーム　チート版！']],length:1};
+    var two = getScID(2);
+    //var two={grade:'2',ID:[[366353052]],Name:[['スイカゲーム　チート版！']],length:1};
     $('h1#yomikomi')[0].style='display:none';
     //$('h1#yomikomi').css('display','none');
     

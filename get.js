@@ -1,6 +1,7 @@
 function getScID(grade){
-    var jsondatagrade={};
+    var jsondatagrade;
     $.getJSON(`https://yawara.tamago55.f5.si/json/grade${grade}.json`, (data) =>{
-        data=jsondatagrade;
+        jsondatagrade=data;
     });
+    return jsondatagrade
 }
