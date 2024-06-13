@@ -13,7 +13,7 @@ a[href="#two"]{
     font-family: "Rampart One", sans-serif;
 }
 a[href="#one"],a[href="#two"]{
-    font-size: 30px;
+    font-size: 30%;
     float: left;
     width: 50%;
     padding-top: 3px;
