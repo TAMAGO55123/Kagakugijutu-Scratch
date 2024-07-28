@@ -108,3 +108,8 @@ function iframedata(){
     data.height=document.documentElement.offsetHeight;
     data.contentWindow.location.replace(`https://turbowarp.org/${queryObject}/embed/`);
 }
+
+function iframeback(){
+    let data=document.querySelector('div#iframe iframe');
+    data.contentWindow.location.replace('https://turbowarp.org/984137598/embed/');
+}
