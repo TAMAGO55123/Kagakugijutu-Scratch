@@ -53,6 +53,26 @@ window.addEventListener('load', ()=>{
         onehtml[index][3].alt=value[1];
         document.querySelector(`a.${num[index]}`).appendChild(onehtml[index][3]);
     });
+
+    twolist.forEach(function (value,index){
+        twohtml[index]=[];
+        twohtml[index][0]=document.createElement('div');
+        twohtml[index][0].id=index.toString();
+        twodiv.appendChild(twohtml[index][0]);
+        twohtml[index][1]=document.createElement('h3');
+        twohtml[index][1].innerText=value[1];
+        i='div#'+num[index];
+        document.querySelector(i).appendChild(twohtml[index][1]);
+        twohtml[index][2]=document.createElement('a');
+        twohtml[index][2].href='#page02?data='+value[0];
+        twohtml[index][2].onclick=iframedata;
+        document.querySelector(i).appendChild(twohtml[index][2]);
+        twohtml[index][2].classList.add(index.toString());
+        twohtml[index][3]=document.createElement('img');
+        twohtml[index][3].src=value[2];
+        twohtml[index][3].alt=value[1];
+        document.querySelector(`a.${num[index]}`).appendChild(twohtml[index][3]);
+    });
     
 });
 function iframedata(){
