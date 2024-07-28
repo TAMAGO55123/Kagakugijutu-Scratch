@@ -15,18 +15,20 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
         <!--Lib-CSS-->
+        <link rel="stylesheet" href="/lib/css/normalize.css">
         <link href="lib/css/br.css">
+        <link rel="stylesheet" href="/addlibrary.css">
         <link rel="stylesheet" href="/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
         <!--Lib-JavaScript-->
         <script src="lib/js/console.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-        <!--Style-->
-        <link rel="stylesheet" href="index.css">
         <!--api-->
         <script src="https://tamago55123.github.io/kagakugijutu-scratch-update-1/grade.js"></script>
         <script src="/get.js"></script>
+        <!--Style-->
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
         <div data-role="page" id="page01" data-theme="a">
@@ -36,24 +38,28 @@
             </div>
             <div role="main" class="ui-content">
                 <div data-role="tabs" id="tabs">
-                    <h1 id="yomikomi">読み込み中•••</h1>
-                    <div data-role="navber">
-                        <ul>
-                            <li class="tabli"><a href="#one" role="button" data-role="button">1年生</a></li>
-                            <li class="tabli"><a href="#two" role="button" data-role="button">2年生</a></li>
-                        </ul>
+                    <h1 id="yomikomi">読み込み中</h1>
+                    <div data-role="navbar">
+                      <ul>
+                      <li><a href="#one">one</a></li>
+                      <li><a href="#two">two</a></li>
+                      </ul>
                     </div>
-                    <br>
                     <div id="one" class="ui-body-a ui-content">
-                        
+                      <h1>内容</h1>
                     </div>
                     <div id="two" class="ui-body-a ui-content">
-                        two
-
+                      <h1>内容</h1>
                     </div>
-                </div>
+                  </div>
             </div>
             
+        </div>
+        <div data-role="page" id="page02" data-theme="a">
+            <mo></mo>
+            <div id="iframe" style="display: inline-block;width: 100%;">
+                <iframe width="480" height="360" src=""></iframe>
+            </div>
         </div>
         
         <div id="js">

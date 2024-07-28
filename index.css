@@ -4,20 +4,16 @@ h1{
     font-style: normal;
     font-size: 30px;
 }
-a[href="#one"]{
-    font-family: "Rampart One", sans-serif;
+div[data-role="navbar"] ul li{
     
-
-}
-a[href="#two"]{
-    font-family: "Rampart One", sans-serif;
-}
-a[href="#one"],a[href="#two"]{
-    font-size: 30%;
     float: left;
     width: 50%;
     padding-top: 3px;
     padding-bottom: 3px;
+}
+div[data-role="navbar"] ul li a{
+    font-size: 1rem;
+    font-family: "Rampart One", sans-serif;
 }
 li.tabli{
     list-style: none;
@@ -34,4 +30,7 @@ li.tabli{
 .menuli{
     width: 100%;
     clear: both;
+}
+div#iframe iframe{
+    
 }
