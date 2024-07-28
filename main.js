@@ -89,6 +89,7 @@ var yomikomi=()=>{
         twohtml[index][2]=document.createElement('a');
         twohtml[index][2].href='#page02?data='+value[0];
         twohtml[index][2].onclick=iframedata;
+        twohtml[index][2].dataset.turbo=value[0];
         document.querySelector(i).appendChild(twohtml[index][2]);
         twohtml[index][2].classList.add('b'+index.toString());
         twohtml[index][3]=document.createElement('img');
@@ -97,6 +98,7 @@ var yomikomi=()=>{
         document.querySelector(`a.b${num[index]}`).appendChild(twohtml[index][3]);
     });
     
+    document.querySelector('a#ba').onclick=iframeback;
 };
 
 window.addEventListener('load', yomikomi);
@@ -105,11 +107,11 @@ function iframedata(){
     consoleif.log(this.dataset.turbo);
     let queryObject = this.dataset.turbo;
     data.width=document.documentElement.offsetWidth;
-    data.height=document.documentElement.offsetHeight;
+    data.height=document.documentElement.offsetHeight-80;
     data.contentWindow.location.replace(`https://turbowarp.org/${queryObject}/embed/`);
 }
 
 function iframeback(){
     let data=document.querySelector('div#iframe iframe');
-    data.contentWindow.location.replace('https://turbowarp.org/984137598/embed/');
+    data.contentWindow.location.replace('https://turbowarp.org/984137598/embed?autoplay');
 }
