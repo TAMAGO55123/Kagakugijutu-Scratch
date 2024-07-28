@@ -12,7 +12,7 @@ div[data-role="navbar"] ul li{
     padding-bottom: 3px;
 }
 div[data-role="navbar"] ul li a{
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: "Rampart One", sans-serif;
 }
 li.tabli{
@@ -30,7 +30,4 @@ li.tabli{
 .menuli{
     width: 100%;
     clear: both;
-}
-div#iframe iframe{
-    
 }
