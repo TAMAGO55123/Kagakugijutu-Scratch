@@ -113,5 +113,5 @@ function iframedata(){
 
 function iframeback(){
     let data=document.querySelector('div#iframe iframe');
-    data.contentWindow.location.replace('https://turbowarp.org/984137598/embed?autoplay');
+    data.contentWindow.location.replace('https://turbowarp.org/984137598/embed?autoplay&turbo');
 }
