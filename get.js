@@ -1,5 +1,5 @@
 /**
- * 
+ * データ取得
  * @param {number} grade 
  * @returns {Array}
  */

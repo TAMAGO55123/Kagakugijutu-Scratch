@@ -1,3 +1,18 @@
-if(!document.cookie.indexOf('data')==-1||!document.cookie.indexOf('kannri')==-1){
-    document.body.innerHTML=`期限切れ`
+/**
+ * 
+ * @param {Function} func
+ * @param {Function} nofunc  
+ * @returns {Boolean}
+ */
+function check(func,nofunc) {
+
+    if( document.cookie.indexOf('data') >= 0 || document.cookie.indexOf('kannri') >= 0 ){
+        func();
+        return true
+    }
+    else{
+        nofunc();
+        return false
+    }
+    
 }

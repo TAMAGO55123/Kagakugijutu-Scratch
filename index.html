@@ -22,10 +22,16 @@
         <!--Lib-JavaScript-->
         <script src="lib/js/console.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <script src="/lib/js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
         <!--api-->
+        <script>
+          var gradedata=[{"grade":"1","ID":[[552154309]],"Name":[["てsと"]],"length":1},{"grade":"2","ID":[[366353052]],"Name":[["スイカゲームチート版"]],"length":1}];
+        </script>
         <script src="https://tamago55123.github.io/kagakugijutu-scratch-update-1/grade.js"></script>
+        <script src="/lib/js/setting.js"></script>
+        
+        <script src="/check.js"></script>
         <script src="/get.js"></script>
         <!--Style-->
         <link rel="stylesheet" href="index.css">
@@ -41,21 +47,26 @@
                     <h1 id="yomikomi">読み込み中</h1>
                     <div data-role="navbar">
                       <ul>
-                        <li><a href="#one" style="font-size: 2rem; padding: 5px; font-weight: 400;">一年生</a></li>
+                        <li><a href="#one" style="font-size: 2rem; padding: 5px;" class="ui-btn-active">一年生</a></li>
                         <li><a href="#two" style="font-size: 2rem; padding: 5px;">二年生</a></li>
+                        <li><a href="#three" style="font-size: 2rem; padding: 5px;">特別</a></li>
                       </ul>
                     </div>
                     <div id="one" class="ui-body-a ui-content">
                       <h1>内容</h1>
                     </div>
                     <div id="two" class="ui-body-a ui-content">
-                      <h1>内容</h1>
+                      <h1>内容2</h1>
+                    </div>
+                    <div id="three" class="ui-body-a ui-content">
+                      <h1>内容3</h1>
                     </div>
                   </div>
-                  <!-- FC2カウンター ここから -->
-                  <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89508724"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89508724" /></noscript>
-                  <!-- FC2カウンター ここまで -->
+                  
             </div>
+            <!-- FC2カウンター ここから -->
+            <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89508724"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89508724" /></noscript>
+            <!-- FC2カウンター ここまで -->
             
         </div>
         <div data-role="page" id="page02" data-theme="a">
@@ -66,7 +77,7 @@
         </div>
         
         <div id="js">
-            <script src="/lib/js/setting.js"></script>
+            
             <script src="lib/js/back.js"></script>
             <script src="lib/js/br.js"></script>
             <script src="check.js"></script>

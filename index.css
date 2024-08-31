@@ -4,6 +4,7 @@ h1{
     font-style: normal;
     font-size: 30px;
 }
+
 div[data-role="navbar"] ul li{
     
     float: left;
@@ -11,22 +12,20 @@ div[data-role="navbar"] ul li{
     padding-top: 3px;
     padding-bottom: 3px;
 }
+
 div[data-role="navbar"] ul li a{
     font-size: 2rem;
     font-family: "Rampart One", sans-serif;
 }
+
 li.tabli{
     list-style: none;
 }
-/*div[role="main"]{
-    padding-left: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-}*/
+
 #one,#two{
     background-color: #f9f9f9;
 }
+
 .menuli{
     width: 100%;
     clear: both;

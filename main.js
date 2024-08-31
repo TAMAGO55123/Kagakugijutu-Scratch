@@ -101,7 +101,11 @@ var yomikomi=()=>{
     document.querySelector('a#ba').onclick=iframeback;
 };
 
-window.addEventListener('load', yomikomi);
+check(
+    () => {window.addEventListener('load', yomikomi);},
+    () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+);
+
 function iframedata(){
     let data=document.querySelector('div#iframe iframe');
     consoleif.log(this.dataset.turbo);

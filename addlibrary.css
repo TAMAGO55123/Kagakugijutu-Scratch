@@ -1,6 +1,18 @@
 /*fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+@font-face {
+    font-family: "Rampart One";
+    src: url("/font/RampartOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    font-weight:700;
+    src: url("/font/MPLUSRounded1c-Bold.ttf");
+}
+
+@font-face {
+    font-family: "M PLUS Rounded 1c";
+    font-weight:400;
+    src: url("/font/MPLUSRounded1c-Regular.ttf");
+}
