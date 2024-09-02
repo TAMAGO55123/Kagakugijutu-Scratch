@@ -2,6 +2,13 @@
 
 @font-face {
     font-family: "Rampart One";
+    font-weight: 400;
+    src: url("/font/RampartOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rampart One";
+    font-weight: bold;
     src: url("/font/RampartOne-Regular.ttf");
 }
 
