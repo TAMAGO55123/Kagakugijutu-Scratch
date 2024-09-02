@@ -14,7 +14,7 @@ var yomikomi=()=>{
     //var one={grade:'1',ID:[[366353052]],Name:[['スイカゲーム　チート版！']],length:1};
     var two = getScID(2);
     //var two={grade:'2',ID:[[366353052]],Name:[['スイカゲー ム　チート版！']],length:1};
-    $('h1#yomikomi')[0].style='display:none';
+    
     //$('h1#yomikomi').css('display','none');
     
     var i;
@@ -105,6 +105,7 @@ check(
     () => {window.addEventListener('load', yomikomi);},
     () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
 );
+window.addEventListener('load',function(){$('h1#yomikomi')[0].style='display:none';});
 
 function iframedata(){
     let data=document.querySelector('div#iframe iframe');
