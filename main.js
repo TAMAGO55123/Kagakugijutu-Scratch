@@ -114,9 +114,17 @@ function iframedata(){
     data.width=document.documentElement.offsetWidth;
     data.height=document.documentElement.offsetHeight-80;
     data.contentWindow.location.replace(`https://turbowarp.org/${queryObject}/embed/`);
+    check(
+        () => {},
+        () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+    );
 }
 
 function iframeback(){
     let data=document.querySelector('div#iframe iframe');
     data.contentWindow.location.replace('https://turbowarp.org/984137598/embed?autoplay&turbo');
+    check(
+        () => {},
+        () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+    );
 }
