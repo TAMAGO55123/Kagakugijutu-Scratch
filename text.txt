@@ -1,37 +1,26 @@
-
 .DS_Store/*fonts*/
-
-@font-face {
+@font-face{
     font-family: "Rampart One";
     font-weight: 400;
     src: url("/font/RampartOne-Regular.ttf");
 }
-
-@font-face {
+@font-face{
     font-family: "Rampart One";
     font-weight: bold;
     src: url("/font/RampartOne-Regular.ttf");
 }
-
-@font-face {
+@font-face{
     font-family: "M PLUS Rounded 1c";
     font-weight:700;
     src: url("/font/MPLUSRounded1c-Bold.ttf");
 }
-
 @font-face {
     font-family: "M PLUS Rounded 1c";
     font-weight:400;
     src: url("/font/MPLUSRounded1c-Regular.ttf");
-}/**
- * 
- * @param {Function} func
- * @param {Function} nofunc  
- * @returns {Boolean}
- */
-function check(func,nofunc) {
-
-    if( document.cookie.indexOf('data') >= 0 || document.cookie.indexOf('kannri') >= 0 ){
+}
+function check(func,nofunc){
+    if(document.cookie.indexOf('data')>=0||document.cookie.indexOf('kannri')>=0){
         func();
         return true
     }
@@ -40,7 +29,9 @@ function check(func,nofunc) {
         return false
     }
     
-}yawara.tamago55.f5.si<!DOCTYPE html>
+}
+yawara.tamago55.f5.si
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -55,45 +46,33 @@ function check(func,nofunc) {
     </script>
     <a href="/index.html">移動しない場合はこちら</a>
 </body>
-</html>/**
- * データ取得
- * @param {number} grade 
- * @returns {Array}
- */
+</html>
 function getScID(grade){
     consoleif.log(gradedata[grade-1]);
     return gradedata[grade-1];
 }
-
-
 h1{
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
 }
-
-div[data-role="navbar"] ul li{
-    
+div[data-role="navbar"] ul li{    
     float: left;
     width: 50%;
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 div[data-role="navbar"] ul li a{
     font-size: 2rem;
     font-family: "Rampart One", sans-serif;
 }
-
 li.tabli{
     list-style: none;
 }
-
 #one,#two,#three{
     background-color: #f9f9f9;
 }
-
 .menuli{
     width: 100%;
     clear: both;
@@ -186,7 +165,8 @@ li.tabli{
         </div>
         
     </body>
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -223,7 +203,8 @@ li.tabli{
         })
     </script>
 </body>
-</html><!DOCTYPE html>
+</html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -363,83 +344,35 @@ function iframeback(){
         () => {},
         () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
     );
-}# Kagakugijutu-Scratch
-
-[アップデートプログラム](https://github.com/TAMAGO55123/kagakugijutu-scratch-update-1)
-
-そろそろ完成
+}
 'use strict'
-/**
- * コンソール用のクラス
- */
-
 class consolei{
-    /**
-     * 
-     * @param {boolean} coif 
-     */
     constructor(coif=true){
         this.coif=coif;
     }
-
-    /**
-     * ログ
-     * 
-     * 引数
-     * value : 文字など
-     * @param {string} value
-     */
     log(value){
         if(this.coif){
             console.log(value);
         }
     }
-
-    /**
-     * エラー
-     * 
-     * 引数
-     * value : 文字など
-     * @param {string} value
-     */
     error(value){
         if(this.coif){
             console.error(value);
         }
     }
-
-    /**
-     * 情報
-     * 
-     * 引数
-     * value : 文字など
-     * @param {string} value
-     */
     info(value){
         if(this.coif){
             console.info(value);
         }
     }
-
-    /**
-     * 注意
-     * 
-     * 引数
-     * value : 文字など
-     * @param {string} value
-     */
     warn(value){
         if(this.coif){
             console.warn(value);
         }
     }
-
-    /**
-     * クリア
-     */
     clear(){
         console.clear();
     }
 }
-const consoleif = new consolei();
+const consoleif=new consolei();
 consoleif.coif=true;
