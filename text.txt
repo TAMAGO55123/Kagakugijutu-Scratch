@@ -1,4 +1,4 @@
-.DS_Store/*fonts*/
+.DS_Store
 @font-face{
     font-family: "Rampart One";
     font-weight: 400;
@@ -80,11 +80,9 @@ li.tabli{
 <html lang="ja">
     <head>
         <title>科学技術部 作品発表ページ</title>
-        <!--meta-->
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="作品発表のページのホーム">
-        <!--icon-->
         <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-32x32.png">
@@ -92,26 +90,21 @@ li.tabli{
         <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#2594b4">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
-        <!--Lib-CSS-->
         <link rel="stylesheet" href="/lib/css/normalize.css">
         <link href="lib/css/br.css">
         <link rel="stylesheet" href="/addlibrary.css">
         <link rel="stylesheet" href="/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.css">
-        <!--Lib-JavaScript-->
         <script src="lib/js/console.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" crossorigin="anonymous"></script>
         <script src="/lib/js/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
         <script src="/lib/jquery.mobile-1.4.5/jquery.mobile-1.4.5.js"></script>
-        <!--api-->
         <script>
           var gradedata=[{"grade":"1","ID":[[552154309]],"Name":[["てsと"]],"length":1},{"grade":"2","ID":[[366353052]],"Name":[["スイカゲームチート版"]],"length":1}];
         </script>
         <script src="https://tamago55123.github.io/kagakugijutu-scratch-update-1/grade.js"></script>
         <script src="/lib/js/setting.js"></script>
-        
         <script src="/check.js"></script>
         <script src="/get.js"></script>
-        <!--Style-->
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -142,9 +135,7 @@ li.tabli{
                   </div>
                   
             </div>
-            <!-- FC2カウンター ここから -->
             <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=89508724"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=89508724" /></noscript>
-            <!-- FC2カウンター ここまで -->
             
         </div>
         <div data-role="page" id="page02" data-theme="a">
@@ -155,14 +146,11 @@ li.tabli{
         </div>
         
         <div id="js">
-            
             <script src="lib/js/back.js"></script>
             <script src="lib/js/br.js"></script>
             <script src="check.js"></script>
             <script src="/main.js"></script>
-            
         </div>
-        
     </body>
 </html>
 <!DOCTYPE html>
@@ -191,7 +179,6 @@ li.tabli{
     <input type="range" id="time" name="time" min="1" value="100">
     <label for="time">時間（分）</label>
     <label for="time" id="num"></label>
-    
     <script>
         document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分'
         document.querySelector('button#sub').addEventListener('click',()=>{
