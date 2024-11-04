@@ -76,25 +76,29 @@ var yomikomi=()=>{
 
     
     twolist.forEach(function (value,index){
+        //リスト設定
         twohtml.push([]);
         twohtml[index].push([]);
         twohtml[index].push([]);
         twohtml[index].push([]);
         twohtml[index].push([]);
-
+        //親div設定
         twohtml[index][0]=document.createElement('div');
         twohtml[index][0].id='b'+index.toString();
         twodiv.appendChild(twohtml[index][0]);
+        //タイトル設定
         twohtml[index][1]=document.createElement('h3');
         twohtml[index][1].innerText=value[1];
         i='div#b'+num[index];
         document.querySelector(i).appendChild(twohtml[index][1]);
+        //埋め込み用リンク追加
         twohtml[index][2]=document.createElement('a');
         twohtml[index][2].href='#page02?data='+value[0];
         twohtml[index][2].onclick=iframedata;
         twohtml[index][2].dataset.turbo=value[0];
         document.querySelector(i).appendChild(twohtml[index][2]);
         twohtml[index][2].classList.add('b'+index.toString());
+        //サムネ画像取得
         twohtml[index][3]=document.createElement('img');
         twohtml[index][3].src=value[2];
         twohtml[index][3].alt=value[1];
@@ -106,7 +110,7 @@ var yomikomi=()=>{
 
 check(
     () => {window.addEventListener('load', yomikomi);},
-    () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+    () => {document.getElementById('one').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';document.getElementById('two').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';}
 );
 window.addEventListener('load',function(){$('h1#yomikomi')[0].style='display:none';});
 
@@ -119,7 +123,7 @@ function iframedata(){
     data.contentWindow.location.replace(`https://turbowarp.org/${queryObject}/embed/`);
     check(
         () => {},
-        () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+        () => {document.getElementById('one').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';document.getElementById('two').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';}
     );
 }
 
@@ -128,6 +132,6 @@ function iframeback(){
     data.contentWindow.location.replace('https://turbowarp.org/984137598/embed?autoplay&turbo');
     check(
         () => {},
-        () => {document.getElementById('tabs').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>'}
+        () => {document.getElementById('one').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';document.getElementById('two').innerHTML='<spam style="color:red;">時間切れ、または設定不良です。</spam>';}
     );
 }
