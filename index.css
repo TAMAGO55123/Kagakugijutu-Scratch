@@ -30,3 +30,6 @@ li.tabli{
     width: 100%;
     clear: both;
 }
+div#one img,div#two img{
+    border-radius: 10px;
+}
