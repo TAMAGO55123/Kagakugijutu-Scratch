@@ -24,6 +24,9 @@
     <input type="range" id="time" name="time" min="1" value="100">
     <label for="time">時間（分）</label>
     <label for="time" id="num"></label>
+    <br>
+    <input type="text" id="js" name="js">
+    <button id="jsbutton">任意JS実行</button>
     
     <script>
         document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分'
@@ -32,7 +35,12 @@
         });
         document.querySelector('input#time').addEventListener('input',()=>{
             document.querySelector('label#num').innerHTML=document.getElementById('time').value+'分';
-        })
+        });
+        document.querySelector('button#jsbutton').addEventListener('click',()=>{
+            let data1 = document.querySelector('input#js');
+            let data2 = `javascript:${data1.value};location.href='${location.href}';`;
+            location.href = data2;
+        });
     </script>
 </body>
 </html>
