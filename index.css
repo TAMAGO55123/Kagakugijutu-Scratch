@@ -1,35 +1,34 @@
+/*タイトルのスタイルとフォントを指定*/
 h1{
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-weight: 700;
     font-style: normal;
     font-size: 30px;
 }
-
+/*1年生とか2年生とか選ぶところのスタイルの指定*/
 div[data-role="navbar"] ul li{
-    
     float: left;
     width: 50%;
     padding-top: 3px;
     padding-bottom: 3px;
 }
-
 div[data-role="navbar"] ul li a{
     font-size: 2rem;
     font-family: "Rampart One", sans-serif;
 }
-
 li.tabli{
     list-style: none;
 }
-
+/*ページのスタイル*/
 #one,#two,#three{
     background-color: #f9f9f9;
 }
-
+/*メニューのスタイル*/
 .menuli{
     width: 100%;
     clear: both;
 }
+/*サムネイル画像に丸みを持たせる*/
 div#one img,div#two img{
     border-radius: 10px;
 }
