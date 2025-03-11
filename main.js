@@ -110,14 +110,15 @@ var yomikomi=()=>{
         twohtml[index][2].classList.add('b'+index.toString());
         //サムネイルの生成
         twohtml[index][3]=document.createElement('img');
+        //console.log(value[0].indexOf('f') != -1);
         if(value[0].indexOf('f') != -1){
             twohtml[index][3].src="https://tamago55123.github.io/data-hokanko/" + value[0] + ".png";
-            twohtml[index][3].width=288;
-            twohtml[index][3].height=216;
         }
-        else {
+        else{
             twohtml[index][3].src=value[2];
         }
+        twohtml[index][3].width=288;
+        twohtml[index][3].height=216;
         twohtml[index][3].alt=value[1];
         document.querySelector(`a.b${num[index]}`).appendChild(twohtml[index][3]);
     });
