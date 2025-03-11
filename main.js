@@ -84,7 +84,6 @@ var yomikomi=()=>{
         onehtml[index][3].alt=value[1];
         document.querySelector(`a.a${num[index]}`).appendChild(onehtml[index][3]);
     });
-
     
     twolist.forEach(function (value,index){
         //設定用配列の作成
